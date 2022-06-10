@@ -6,3 +6,4 @@ A basic drawing application with the following features:
 * color by holding down your mouse (desktop) or your finger (mobile)
 * undo/redo to different states
 * fill in closed shapes with the selected color using the fill tool
+* stroke width selection using the slider
