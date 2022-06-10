@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="field">
+        <canvas id="canvas">
+        </canvas>
+        <div class="tools">
+            <input onInput="setColor(this)" type="color" class="color-picker" value="#000000">
+            <div class="colors-container">
+                <div onClick="setColor(this)" class="color-field" style="background: #ff0000;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #ffa500;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #ffff00;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #008000;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #0000ff;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #4b0082;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #ee82ee;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #d2691e;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #000000;"></div>
+                <div onClick="setColor(this)" class="color-field" style="background: #ffffff;"></div>
+            </div>
+            <div class="buttons-container">
+                <button onClick="undo()" type="button" class="button">Undo</button>
+                <button onClick="redo()" type="button" class="button">Redo</button>
+                <button onClick="clearCanvas()" type="button" class="button">Clear</button>
+                <button onClick="setTool('pen')" type="button" class="button">Pen</button>
+                <button onClick="setTool('bucket')" type="button" class="button">Fill Bucket</button>
+                <input onInput="drawWidth = this.value" type="range" min="1" max="100" value="50" class="pen-range">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

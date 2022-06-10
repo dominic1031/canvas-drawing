@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #121212;
+}
+
+canvas {
+  box-shadow: -3px 2px 9px 6px black;
+  cursor: pointer;
+  /* center canvas */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.colors-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: fit-content;
+}
+
+.color-field {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  align-self: center;
+}
+
+.tools .button {
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  background: #222;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.color-picker {
+  margin: 0 15px;
+  height: 80px;
+  width: 80px;
+  min-width: 80px;
+}
+
+.pen-range {
+  align-self: center;
+  margin: 10px 10px;
+  width: 100px;
+}
